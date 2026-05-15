@@ -1,0 +1,1419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ═══ PRIMARY SEO ═══ -->
+  <title>Eden Carnation | Fresh Flowers 24/7 | Affordable Flower Pickup &amp; Delivery Toronto</title>
+  <meta name="description" content="Eden Carnation offers fresh flowers at the best prices in Toronto. Convenient pickup locations across the city, open 5AM-9PM. Affordable same-day delivery available 24/7 via WhatsApp. Budget-friendly flowers, never compromising on quality.">
+  <meta name="keywords" content="affordable flowers Toronto, cheap flowers Toronto, fresh flowers 24/7, flower pickup Toronto, same day flower delivery Toronto, budget friendly flowers Toronto, cheapest flower delivery Toronto, fresh flowers North York, fresh flowers Scarborough, flower vending machine Toronto">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Eden Carnation">
+  <link rel="canonical" href="https://edencarnation.com/">
+  <link rel="icon" type="image/png" href="Logo2.png">
+
+  <!-- ═══ OPEN GRAPH ═══ -->
+  <meta property="og:title" content="Eden Carnation | Affordable Fresh Flowers 24/7 in Toronto">
+  <meta property="og:description" content="Fresh flowers at budget-friendly prices. 4 convenient pickup locations across Toronto, open 5AM-9PM. Cheapest delivery rates via WhatsApp, anytime.">
+  <meta property="og:image" content="https://edencarnation.com/Logo2.png">
+  <meta property="og:url" content="https://edencarnation.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_CA">
+  <meta property="og:site_name" content="Eden Carnation">
+
+  <!-- ═══ FONTS ═══ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- ═══ SCHEMA MARKUP ═══ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Florist",
+    "name": "Eden Carnation",
+    "url": "https://edencarnation.com",
+    "telephone": "+16478719231",
+    "email": "Edencarnation@gmail.com",
+    "image": "https://edencarnation.com/Logo2.png",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Toronto",
+      "addressRegion": "ON",
+      "addressCountry": "CA"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "43.7315",
+      "longitude": "-79.3624"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "00:00",
+      "closes": "23:59"
+    },
+    "description": "Eden Carnation offers fresh flowers at the most affordable prices in Toronto. Convenient pickup locations at North York, Scarborough, and Downtown Toronto. Budget-friendly same-day delivery available 24/7 via WhatsApp.",
+    "priceRange": "$$",
+    "areaServed": "Toronto, Ontario, Canada",
+    "sameAs": ["https://www.instagram.com/edencarnation"],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+16478719231",
+      "contactType": "customer service",
+      "availableLanguage": "English",
+      "contactOption": "WhatsApp"
+    }
+  }
+  </script>
+
+  <style>
+    /* ════════════════════════════════════════
+       RESET & VARIABLES
+    ════════════════════════════════════════ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --green-dark:  #2d5a3d;
+      --green-mid:   #4a8c64;
+      --green-light: #7ab895;
+      --green-pale:  #f2f8f4;
+      --gold:        #b8893a;
+      --gold-light:  #fdf3dc;
+      --rose:        #d4849a;
+      --rose-pale:   #fdf0f3;
+      --cream:       #fdf8f2;
+      --peach:       #f9ede4;
+      --white:       #ffffff;
+      --dark:        #2c1810;
+      --mid:         #5a4a42;
+      --light-gray:  #faf6f2;
+      --border:      #ecddd5;
+      --shadow-sm:   0 2px 8px rgba(44,24,16,0.08);
+      --shadow-md:   0 6px 24px rgba(44,24,16,0.12);
+      --shadow-lg:   0 16px 48px rgba(44,24,16,0.16);
+      --radius:      14px;
+      --radius-sm:   8px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--dark);
+      background: var(--cream);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ════ FULL-PAGE FLOWER BACKGROUND ════ */
+    .page-bg {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        url('bg_body.jpg') center/cover no-repeat fixed;
+      opacity: 0.06;
+      pointer-events: none;
+    }
+    /* Corner flower blooms */
+    .page-bg::before {
+      content: '';
+      position: absolute;
+      top: 0; right: 0;
+      width: 520px; height: 520px;
+      background: url('bg_flowers.jpg') center/cover no-repeat;
+      opacity: 0.55;
+      border-radius: 0 0 0 100%;
+      mask-image: radial-gradient(ellipse at top right, black 30%, transparent 75%);
+      -webkit-mask-image: radial-gradient(ellipse at top right, black 30%, transparent 75%);
+    }
+    .page-bg::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0;
+      width: 420px; height: 420px;
+      background: url('deco_flower.jpg') center/cover no-repeat;
+      opacity: 0.40;
+      border-radius: 0 100% 0 0;
+      mask-image: radial-gradient(ellipse at bottom left, black 30%, transparent 75%);
+      -webkit-mask-image: radial-gradient(ellipse at bottom left, black 30%, transparent 75%);
+    }
+
+    h1,h2,h3,h4 { font-family: 'Playfair Display', serif; line-height: 1.2; }
+    img { max-width: 100%; display: block; }
+    a  { text-decoration: none; color: inherit; }
+
+    .container { max-width: 1160px; margin: 0 auto; padding: 0 24px; }
+
+    /* ════════════════════════════════════════
+       BUTTONS
+    ════════════════════════════════════════ */
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 13px 26px; border-radius: 50px;
+      font-family: 'Inter', sans-serif; font-size: 0.92rem; font-weight: 600;
+      cursor: pointer; border: none; transition: all 0.22s ease;
+      white-space: nowrap;
+    }
+    .btn-green  { background: var(--green-dark); color: #fff; }
+    .btn-green:hover  { background: var(--green-mid); transform: translateY(-2px); box-shadow: 0 8px 22px rgba(26,71,49,.35); }
+    .btn-gold   { background: var(--gold); color: #fff; }
+    .btn-gold:hover   { background: #b8923e; transform: translateY(-2px); box-shadow: 0 8px 22px rgba(201,168,76,.40); }
+    .btn-wa     { background: #25D366; color: #fff; }
+    .btn-wa:hover     { background: #1ebe5d; transform: translateY(-2px); box-shadow: 0 8px 22px rgba(37,211,102,.40); }
+    .btn-outline-white { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,.65); }
+    .btn-outline-white:hover { background: #fff; color: var(--green-dark); }
+    .btn-outline-green { background: transparent; color: var(--green-dark); border: 2px solid var(--green-dark); }
+    .btn-outline-green:hover { background: var(--green-dark); color: #fff; }
+
+    /* ════════════════════════════════════════
+       TOP BAR
+    ════════════════════════════════════════ */
+    .top-bar {
+      background: var(--green-dark);
+      padding: 9px 0;
+      text-align: center;
+      font-size: 0.80rem;
+      font-weight: 500;
+      color: rgba(255,255,255,.88);
+      letter-spacing: 0.2px;
+      overflow: hidden;
+    }
+    .top-bar-inner {
+      display: flex; align-items: center; justify-content: center;
+      gap: 0; flex-wrap: nowrap;
+    }
+    .top-bar-item {
+      display: flex; align-items: center; gap: 6px;
+      padding: 0 18px;
+      border-right: 1px solid rgba(255,255,255,.2);
+    }
+    .top-bar-item:last-child { border-right: none; }
+    .top-dot { color: #6ee7a0; font-size: 0.6rem; }
+
+    /* ════════════════════════════════════════
+       NAVIGATION
+    ════════════════════════════════════════ */
+    .nav-wrap {
+      position: sticky; top: 0; z-index: 900;
+      background: rgba(255,255,255,.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      display: flex; align-items: center;
+      justify-content: space-between;
+      padding: 8px 0;
+    }
+    .logo { display: flex; align-items: center; }
+    .logo img {
+      height: 100px; width: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--gold);
+      box-shadow: 0 3px 18px rgba(184,137,58,0.32);
+      display: block;
+    }
+
+    .nav-links { display: flex; align-items: center; gap: 30px; list-style: none; }
+    .nav-links a {
+      font-size: 0.88rem; font-weight: 500; color: var(--mid);
+      transition: color 0.2s; position: relative; padding-bottom: 2px;
+    }
+    .nav-links a::after {
+      content: ''; position: absolute; bottom: 0; left: 0;
+      width: 0; height: 2px; background: var(--green-mid);
+      transition: width 0.22s;
+    }
+    .nav-links a:hover { color: var(--green-dark); }
+    .nav-links a:hover::after { width: 100%; }
+
+    .hamburger {
+      display: none; flex-direction: column; gap: 5px;
+      cursor: pointer; padding: 4px; background: none; border: none;
+    }
+    .hamburger span {
+      display: block; width: 24px; height: 2px;
+      background: var(--green-dark); border-radius: 2px; transition: all .3s;
+    }
+
+    /* ════════════════════════════════════════
+       MOBILE MENU
+    ════════════════════════════════════════ */
+    .mobile-nav {
+      display: none; position: fixed; inset: 0;
+      background: #fff; z-index: 1000;
+      flex-direction: column; padding: 24px;
+    }
+    .mobile-nav.open { display: flex; }
+    .mob-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 36px; }
+    .mob-close { background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--dark); }
+    .mob-links { list-style: none; }
+    .mob-links li { border-bottom: 1px solid var(--border); }
+    .mob-links a { display: block; padding: 17px 0; font-size: 1.1rem; font-weight: 500; color: var(--dark); }
+
+    /* ════════════════════════════════════════
+       HERO
+    ════════════════════════════════════════ */
+    .hero {
+      position: relative; min-height: 94vh;
+      display: flex; align-items: center;
+      background: linear-gradient(140deg, #0d2818 0%, #1a4731 45%, #246644 100%);
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background: url('bg_flowers.jpg') center/cover no-repeat;
+      opacity: 0.20;
+    }
+    .hero-ring {
+      position: absolute; border-radius: 50%;
+      border: 1px solid rgba(255,255,255,.06);
+    }
+    .hero-ring.r1 { width:700px; height:700px; right:-200px; top:-200px; }
+    .hero-ring.r2 { width:400px; height:400px; right:100px; bottom:-100px; }
+
+    .hero-content { position: relative; z-index: 1; max-width: 660px; }
+
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 9px;
+      background: rgba(255,255,255,.10); border: 1px solid rgba(255,255,255,.22);
+      color: #fff; padding: 7px 17px; border-radius: 50px;
+      font-size: 0.80rem; font-weight: 500; margin-bottom: 26px;
+      backdrop-filter: blur(6px);
+    }
+    .live-dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: #5eff8a; animation: blink 1.6s infinite;
+    }
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.25} }
+
+    .hero h1 {
+      font-size: clamp(2.6rem, 5.5vw, 4rem); color: #fff;
+      margin-bottom: 22px; font-weight: 700;
+    }
+    .hero h1 em { font-style: normal; color: var(--gold); }
+
+    .hero p {
+      font-size: 1.08rem; color: rgba(255,255,255,.82);
+      max-width: 520px; line-height: 1.75; margin-bottom: 38px;
+    }
+
+    .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
+
+    .hero-stats {
+      display: flex; gap: 44px; flex-wrap: wrap;
+      margin-top: 60px; padding-top: 40px;
+      border-top: 1px solid rgba(255,255,255,.15);
+    }
+    .stat-num  { font-family: 'Playfair Display', serif; font-size: 2.1rem; font-weight: 700; color: var(--gold); display: block; }
+    .stat-lbl  { font-size: 0.79rem; text-transform: uppercase; letter-spacing: 1px; color: rgba(255,255,255,.62); margin-top: 2px; display: block; }
+
+    /* ════════════════════════════════════════
+       AVAILABILITY STRIP
+    ════════════════════════════════════════ */
+    .avail-strip { background: var(--gold); padding: 15px 0; }
+    .avail-inner { display: flex; align-items: center; justify-content: center; gap: 0; flex-wrap: wrap; }
+    .avail-pill {
+      display: flex; align-items: center; gap: 8px;
+      color: #fff; font-size: 0.88rem; font-weight: 600;
+      padding: 0 24px;
+      border-right: 1px solid rgba(255,255,255,.35);
+    }
+    .avail-pill:last-child { border-right: none; }
+    .avail-pill .ic { font-size: 1.1rem; }
+
+    /* ════════════════════════════════════════
+       SECTIONS BASE
+    ════════════════════════════════════════ */
+    section { padding: 90px 0; }
+    .sec-label {
+      display: block; text-transform: uppercase; letter-spacing: 2.5px;
+      font-size: 0.73rem; font-weight: 600; color: var(--green-mid); margin-bottom: 11px;
+    }
+    .sec-title { font-size: clamp(1.9rem, 3.5vw, 2.65rem); margin-bottom: 15px; }
+    .sec-sub   { font-size: 0.98rem; color: var(--mid); max-width: 560px; line-height: 1.75; }
+    .center    { text-align: center; }
+    .center .sec-sub { margin: 0 auto; }
+
+    /* ════════════════════════════════════════
+       HOW IT WORKS
+    ════════════════════════════════════════ */
+    .how-it-works {
+      background: var(--green-pale);
+      position: relative;
+    }
+    .how-it-works::before {
+      content: '';
+      position: absolute; top: 0; right: 0;
+      width: 340px; height: 100%;
+      background: url('how_it_works.jpg') center/cover no-repeat;
+      opacity: 0.07;
+      pointer-events: none;
+    }
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 28px; margin-top: 56px;
+    }
+    .step-card {
+      background: var(--white); border-radius: var(--radius);
+      padding: 38px 26px; text-align: center;
+      box-shadow: var(--shadow-sm); position: relative;
+      transition: transform .25s, box-shadow .25s;
+    }
+    .step-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-md); }
+    .step-n {
+      position: absolute; top: -14px; left: 24px;
+      background: var(--green-dark); color: #fff;
+      width: 30px; height: 30px; border-radius: 50%;
+      font-size: 0.78rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .step-icon { font-size: 2.8rem; margin-bottom: 16px; }
+    .step-card h3 { font-size: 1.1rem; color: var(--green-dark); margin-bottom: 10px; }
+    .step-card p  { font-size: 0.88rem; color: var(--mid); line-height: 1.65; }
+
+    /* ════════════════════════════════════════
+       LOCATIONS
+    ════════════════════════════════════════ */
+    .loc-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 22px; margin-top: 52px;
+    }
+    .loc-card {
+      border: 1.5px solid var(--border); border-radius: var(--radius);
+      padding: 28px 24px; background: var(--white);
+      transition: all .25s;
+    }
+    .loc-card:hover {
+      border-color: var(--green-light);
+      box-shadow: 0 8px 28px rgba(45,122,82,.12);
+      transform: translateY(-4px);
+    }
+    .loc-ico {
+      width: 50px; height: 50px; border-radius: 12px;
+      background: var(--green-pale);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.5rem; margin-bottom: 15px;
+    }
+    .loc-card h3  { font-size: 1.02rem; color: var(--green-dark); margin-bottom: 6px; }
+    .loc-card .city { font-size: 0.83rem; color: var(--mid); margin-bottom: 14px; }
+    .loc-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 0.80rem; font-weight: 600; color: var(--green-mid);
+      background: var(--green-pale); padding: 5px 12px; border-radius: 50px;
+    }
+    .loc-note {
+      text-align: center; margin-top: 26px;
+      font-size: 0.90rem; color: var(--mid);
+    }
+    .loc-note a { color: var(--green-mid); font-weight: 600; }
+    .loc-note a:hover { text-decoration: underline; }
+
+    /* ════════════════════════════════════════
+       SERVICES
+    ════════════════════════════════════════ */
+    .services-sec { background: var(--dark); }
+    .services-sec .sec-label { color: var(--gold); }
+    .services-sec .sec-title { color: var(--white); }
+    .services-sec .sec-sub   { color: rgba(255,255,255,.60); }
+
+    .srv-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 22px; margin-top: 54px;
+    }
+    .srv-card {
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.10);
+      border-radius: var(--radius); padding: 32px 26px;
+      transition: all .25s;
+    }
+    .srv-card:hover { background: rgba(255,255,255,.10); transform: translateY(-4px); }
+    .srv-icon { font-size: 2.4rem; margin-bottom: 16px; }
+    .srv-card h3 { color: #fff; font-size: 1.12rem; margin-bottom: 10px; }
+    .srv-card p  { color: rgba(255,255,255,.60); font-size: 0.88rem; line-height: 1.65; }
+    .srv-tag {
+      display: inline-block; margin-top: 14px;
+      background: var(--gold); color: #fff;
+      font-size: 0.73rem; font-weight: 700; letter-spacing: .5px;
+      text-transform: uppercase; padding: 4px 12px; border-radius: 50px;
+    }
+
+    /* ════════════════════════════════════════
+       WHY US
+    ════════════════════════════════════════ */
+    .why-sec { background: var(--green-pale); }
+    .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: center; }
+    .why-img-wrap { position: relative; }
+    .why-img {
+      width: 100%; height: 520px; object-fit: cover;
+      object-position: center top;
+      border-radius: 20px; box-shadow: var(--shadow-lg);
+    }
+    .float-badge {
+      position: absolute; bottom: 24px; left: -28px;
+      background: #fff; border-radius: 14px;
+      padding: 18px 22px; box-shadow: var(--shadow-md);
+      display: flex; align-items: center; gap: 14px;
+    }
+    .float-num { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 700; color: var(--green-dark); line-height: 1; }
+    .float-lbl { font-size: 0.78rem; color: var(--mid); line-height: 1.5; }
+
+    .why-list { list-style: none; margin-top: 26px; }
+    .why-item {
+      display: flex; gap: 14px;
+      padding: 16px 0; border-bottom: 1px solid rgba(0,0,0,.07);
+    }
+    .why-item:last-child { border-bottom: none; }
+    .chk {
+      width: 28px; height: 28px; border-radius: 50%;
+      background: var(--green-dark); color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.72rem; flex-shrink: 0; margin-top: 2px;
+    }
+    .why-item h4 { font-size: 0.94rem; margin-bottom: 3px; }
+    .why-item p  { font-size: 0.85rem; color: var(--mid); line-height: 1.55; }
+
+    /* ════════════════════════════════════════
+       CTA BAND
+    ════════════════════════════════════════ */
+    .cta-band {
+      background: linear-gradient(135deg, var(--green-dark), var(--green-mid));
+      padding: 80px 0; text-align: center;
+    }
+    .cta-band h2 { color: #fff; font-size: clamp(1.8rem, 3vw, 2.6rem); margin-bottom: 14px; }
+    .cta-band p  { color: rgba(255,255,255,.78); font-size: 1rem; max-width: 480px; margin: 0 auto 36px; line-height: 1.7; }
+    .cta-btns    { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+
+    /* ════════════════════════════════════════
+       GALLERY
+    ════════════════════════════════════════ */
+    .gal-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      grid-template-rows: 220px 220px;
+      gap: 12px; margin-top: 48px;
+    }
+    .gal-item {
+      border-radius: var(--radius); overflow: hidden;
+      position: relative; cursor: pointer;
+    }
+    .gal-item:first-child { grid-row: span 2; }
+    .gal-item img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform .4s ease;
+    }
+    .gal-item:hover img { transform: scale(1.07); }
+    .gal-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,.35), transparent);
+      opacity: 0; transition: opacity .3s;
+    }
+    .gal-item:hover .gal-overlay { opacity: 1; }
+    .gal-caption {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      padding: 14px 18px 16px;
+      background: linear-gradient(to top, rgba(0,0,0,.62) 0%, transparent 100%);
+      color: #fff; font-size: 0.82rem; font-weight: 600;
+      letter-spacing: 0.04em; text-transform: uppercase;
+      pointer-events: none;
+    }
+    .gal-caption span {
+      display: inline-block;
+      border-bottom: 1.5px solid rgba(255,255,255,.5);
+      padding-bottom: 2px;
+    }
+
+    /* ════════════════════════════════════════
+       MOMENTS SECTION
+    ════════════════════════════════════════ */
+    .moments-sec {
+      padding: 90px 0; background: var(--off-white);
+    }
+    .moments-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 24px;
+      margin-top: 48px;
+    }
+    .moment-card {
+      position: relative; border-radius: 20px; overflow: hidden;
+      height: 420px; box-shadow: var(--shadow-lg);
+    }
+    .moment-card img {
+      width: 100%; height: 100%; object-fit: cover;
+      object-position: top center;
+      transition: transform .5s ease;
+    }
+    .moment-card:hover img { transform: scale(1.05); }
+    .moment-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(10,30,20,.72) 0%, rgba(0,0,0,.05) 55%, transparent 100%);
+      display: flex; flex-direction: column; justify-content: flex-end;
+      padding: 32px 28px;
+    }
+    .moment-tag {
+      display: inline-block; background: var(--gold);
+      color: #fff; font-size: 0.68rem; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      padding: 4px 12px; border-radius: 20px;
+      margin-bottom: 10px; width: fit-content;
+    }
+    .moment-overlay h3 {
+      color: #fff; font-family: 'Playfair Display', serif;
+      font-size: 1.55rem; margin-bottom: 8px; line-height: 1.25;
+    }
+    .moment-overlay p {
+      color: rgba(255,255,255,.78); font-size: 0.85rem;
+      line-height: 1.6; margin: 0;
+    }
+    @media(max-width:980px){
+      .moments-grid { grid-template-columns: 1fr; }
+      .moment-card  { height: 320px; }
+    }
+
+    /* ════════════════════════════════════════
+       CONTACT
+    ════════════════════════════════════════ */
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-top: 48px; align-items: start; }
+
+    .c-info h3 { font-size: 1.4rem; margin-bottom: 10px; color: var(--green-dark); }
+    .c-info > p { font-size: 0.92rem; color: var(--mid); margin-bottom: 28px; line-height: 1.7; }
+    .c-item { display: flex; gap: 14px; margin-bottom: 20px; }
+    .c-ic {
+      width: 44px; height: 44px; background: var(--green-pale);
+      border-radius: 10px; display: flex; align-items: center;
+      justify-content: center; font-size: 1.2rem; flex-shrink: 0;
+    }
+    .c-item h4 { font-size: 0.78rem; text-transform: uppercase; letter-spacing: .5px; color: var(--mid); margin-bottom: 3px; font-family: Inter,sans-serif; font-weight: 600; }
+    .c-item p  { font-size: 0.93rem; }
+    .c-item a  { color: var(--green-mid); font-weight: 600; }
+    .c-item a:hover { text-decoration: underline; }
+
+    .c-form { background: var(--green-pale); border-radius: 18px; padding: 36px; }
+    .c-form h3 { font-size: 1.28rem; margin-bottom: 5px; color: var(--green-dark); }
+    .c-form .f-sub { font-size: 0.85rem; color: var(--mid); margin-bottom: 24px; line-height: 1.5; }
+    .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .fg { margin-bottom: 14px; }
+    .fg label { display: block; font-size: 0.80rem; font-weight: 600; color: var(--mid); margin-bottom: 6px; }
+    .fg input, .fg textarea, .fg select {
+      width: 100%; padding: 12px 14px;
+      border: 1.5px solid #d1e4d9; border-radius: var(--radius-sm);
+      font-family: Inter,sans-serif; font-size: 0.90rem;
+      background: #fff; color: var(--dark);
+      outline: none; transition: border-color .2s;
+    }
+    .fg input:focus, .fg textarea:focus, .fg select:focus { border-color: var(--green-mid); }
+    .fg textarea { resize: vertical; min-height: 100px; }
+
+    /* ════════════════════════════════════════
+       FOOTER
+    ════════════════════════════════════════ */
+    footer { background: #0b1f14; padding: 64px 0 28px; color: rgba(255,255,255,.65); }
+    .foot-grid {
+      display: grid; grid-template-columns: 2fr 1fr 1fr 1.4fr;
+      gap: 48px; padding-bottom: 48px;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+    .foot-logo { margin-bottom: 14px; display: flex; align-items: center; }
+    .foot-logo img {
+      height: 72px; width: 72px;
+      border-radius: 50%; object-fit: cover;
+      border: 2px solid rgba(184,137,58,0.5);
+      opacity: 0.90;
+    }
+    .foot-desc { font-size: 0.86rem; line-height: 1.75; margin-bottom: 22px; }
+    .socials { display: flex; gap: 9px; }
+    .soc-btn {
+      width: 38px; height: 38px; border-radius: 8px;
+      background: rgba(255,255,255,.08);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1rem; transition: background .2s;
+    }
+    .soc-btn:hover { background: var(--green-mid); }
+    footer h4 { color: #fff; font-family: Inter,sans-serif; font-weight: 600; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 18px; }
+    .foot-links { list-style: none; }
+    .foot-links li { margin-bottom: 10px; }
+    .foot-links a { font-size: 0.86rem; transition: color .2s; }
+    .foot-links a:hover { color: var(--green-light); }
+    .foot-bottom { padding-top: 26px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; font-size: 0.78rem; }
+
+    /* ════════════════════════════════════════
+       WHATSAPP FLOAT
+    ════════════════════════════════════════ */
+    .wa-float { position: fixed; bottom: 26px; right: 26px; z-index: 9999; display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .wa-tooltip {
+      background: #fff; color: #128C7E;
+      font-size: 0.83rem; font-weight: 600;
+      padding: 8px 15px; border-radius: 20px;
+      box-shadow: var(--shadow-md); white-space: nowrap;
+      opacity: 0; transform: translateX(10px);
+      transition: all .28s; pointer-events: none;
+    }
+    .wa-float:hover .wa-tooltip { opacity: 1; transform: translateX(0); }
+    .wa-circle {
+      width: 60px; height: 60px; border-radius: 50%;
+      background: #25D366;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 18px rgba(37,211,102,.50);
+      animation: waPulse 2.6s infinite;
+    }
+    @keyframes waPulse {
+      0%   { box-shadow: 0 0 0 0   rgba(37,211,102,.50); }
+      70%  { box-shadow: 0 0 0 16px rgba(37,211,102,.00); }
+      100% { box-shadow: 0 0 0 0   rgba(37,211,102,.00); }
+    }
+    .wa-circle svg { width: 30px; height: 30px; fill: #fff; }
+
+    /* ════════════════════════════════════════
+       RESPONSIVE
+    ════════════════════════════════════════ */
+    /* ════════════════════════════════════════
+       FLORAL BACKGROUNDS & DECORATIONS
+    ════════════════════════════════════════ */
+
+    /* Repeating petal pattern overlay */
+    .floral-pattern {
+      background-color: var(--cream);
+      background-image:
+        radial-gradient(ellipse 80px 60px at 10% 20%, rgba(212,132,154,.10) 0%, transparent 70%),
+        radial-gradient(ellipse 60px 80px at 90% 10%, rgba(184,137,58,.09) 0%, transparent 70%),
+        radial-gradient(ellipse 100px 70px at 50% 90%, rgba(122,184,149,.08) 0%, transparent 70%),
+        radial-gradient(ellipse 70px 90px at 80% 70%, rgba(212,132,154,.07) 0%, transparent 70%),
+        url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23b8893a' fill-opacity='0.045'%3E%3Cellipse cx='40' cy='20' rx='8' ry='14'/%3E%3Cellipse cx='40' cy='60' rx='8' ry='14'/%3E%3Cellipse cx='20' cy='40' rx='14' ry='8'/%3E%3Cellipse cx='60' cy='40' rx='14' ry='8'/%3E%3Cellipse cx='26' cy='26' rx='7' ry='12' transform='rotate(45 26 26)'/%3E%3Cellipse cx='54' cy='26' rx='7' ry='12' transform='rotate(-45 54 26)'/%3E%3Cellipse cx='26' cy='54' rx='7' ry='12' transform='rotate(-45 26 54)'/%3E%3Cellipse cx='54' cy='54' rx='7' ry='12' transform='rotate(45 54 54)'/%3E%3Ccircle cx='40' cy='40' r='6' fill='%23d4849a' fill-opacity='0.06'/%3E%3C/g%3E%3C/svg%3E");
+      background-size: auto, auto, auto, auto, 80px 80px;
+    }
+
+    /* Rose-tinted alternate sections */
+    .rose-section {
+      background-color: var(--rose-pale);
+      background-image:
+        radial-gradient(ellipse 120px 80px at 5% 15%, rgba(212,132,154,.12) 0%, transparent 60%),
+        radial-gradient(ellipse 80px 120px at 95% 85%, rgba(184,137,58,.10) 0%, transparent 60%),
+        url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23d4849a' fill-opacity='0.05'%3E%3Cellipse cx='50' cy='25' rx='9' ry='16'/%3E%3Cellipse cx='50' cy='75' rx='9' ry='16'/%3E%3Cellipse cx='25' cy='50' rx='16' ry='9'/%3E%3Cellipse cx='75' cy='50' rx='16' ry='9'/%3E%3Ccircle cx='50' cy='50' r='7'/%3E%3C/g%3E%3C/svg%3E");
+      background-size: auto, auto, 100px 100px;
+    }
+
+    /* Decorative corner flowers on section headings */
+    .sec-deco { position: relative; }
+    .sec-deco::before {
+      content: '';
+      position: absolute;
+      top: -30px; right: 0;
+      width: 180px; height: 180px;
+      background: url('deco_flower.jpg') center/cover no-repeat;
+      border-radius: 50%;
+      opacity: 0.10;
+      pointer-events: none;
+    }
+
+    /* Petal divider between sections */
+    .petal-divider {
+      height: 60px;
+      background: var(--cream);
+      position: relative;
+      overflow: hidden;
+    }
+    .petal-divider svg { position: absolute; bottom: 0; width: 100%; }
+
+    /* Floating flower blobs in hero */
+    .hero-flower-1, .hero-flower-2 {
+      position: absolute;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(212,132,154,.25), transparent 70%);
+      pointer-events: none;
+    }
+    .hero-flower-1 { width: 400px; height: 400px; top: -80px; right: 10%; }
+    .hero-flower-2 { width: 300px; height: 300px; bottom: 10%; right: 30%; }
+
+    /* Section label flower dot */
+    .sec-label::before {
+      content: '✿ ';
+      color: var(--rose);
+      font-size: 0.85rem;
+    }
+
+    /* Fancy card hover with rose accent */
+    .step-card:hover  { border-top: 3px solid var(--rose); }
+    .loc-card:hover   { border-color: var(--rose); }
+
+    /* Nav with subtle floral gradient */
+    .nav-wrap {
+      background: rgba(253,248,242,.97) !important;
+      border-bottom: 1px solid var(--border) !important;
+    }
+
+    /* Top bar — warm gold instead of dark green */
+    .top-bar { background: linear-gradient(90deg, #2d5a3d, #4a8c64, #b8893a, #4a8c64, #2d5a3d) !important; background-size: 400% 100% !important; animation: gradShift 8s ease infinite !important; }
+    @keyframes gradShift { 0%,100%{background-position:0% 50%} 50%{background-position:100% 50%} }
+
+    /* Warm card backgrounds */
+    .step-card { background: #fff; border-top: 3px solid transparent; transition: border-top-color .25s, transform .25s, box-shadow .25s; }
+    .loc-card  { background: #fff; }
+
+    /* Services dark section — add floral watermarks */
+    .services-sec {
+      position: relative;
+      overflow: hidden;
+    }
+    .services-sec::before {
+      content: '';
+      position: absolute;
+      width: 500px; height: 500px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(212,132,154,.06), transparent 70%);
+      top: -100px; right: -100px;
+      pointer-events: none;
+    }
+    .services-sec::after {
+      content: '';
+      position: absolute;
+      width: 400px; height: 400px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(184,137,58,.05), transparent 70%);
+      bottom: -80px; left: -80px;
+      pointer-events: none;
+    }
+
+    /* Why section image — add floral frame */
+    .why-img { border: 5px solid var(--white); }
+    .why-img-wrap::before {
+      content: '';
+      position: absolute;
+      inset: -12px;
+      border-radius: 24px;
+      border: 2px dashed rgba(184,137,58,.25);
+      z-index: 0;
+    }
+    .why-img-wrap { z-index: 1; }
+    .why-img-wrap > * { position: relative; z-index: 1; }
+
+    @media(max-width:980px){
+      .nav-links,.nav-right { display:none; }
+      .hamburger { display:flex; }
+      .why-grid  { grid-template-columns:1fr; }
+      .why-img-wrap { display:none; }
+      .contact-grid { grid-template-columns:1fr; }
+      .foot-grid { grid-template-columns:1fr 1fr; gap:32px; }
+      .gal-grid  { grid-template-columns:1fr 1fr; grid-template-rows:auto; }
+      .gal-item:first-child { grid-row:span 1; }
+    }
+    @media(max-width:620px){
+      section { padding:64px 0; }
+      .hero   { min-height:82vh; }
+      .hero-stats { gap:22px; }
+      .avail-inner { flex-direction:column; gap:8px; }
+      .avail-pill  { border-right:none; padding:4px 0; }
+      .top-bar-inner { flex-direction:column; gap:4px; }
+      .top-bar-item  { border-right:none; }
+      .foot-grid { grid-template-columns:1fr; }
+      .gal-grid  { grid-template-columns:1fr; }
+      .row2      { grid-template-columns:1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Full-page flower background -->
+<div class="page-bg" aria-hidden="true"></div>
+
+<!-- ═══════════════════════════════════
+     TOP BAR
+═══════════════════════════════════ -->
+<div class="top-bar">
+  <div class="top-bar-inner">
+    <div class="top-bar-item"><span class="top-dot">&#9679;</span> Fresh flowers restocked daily</div>
+    <div class="top-bar-item">&#128176; Budget-friendly prices &mdash; Toronto&rsquo;s best rates</div>
+    <div class="top-bar-item">&#128205; 4 convenient pickup locations</div>
+    <div class="top-bar-item">&#128172; Delivery available 24/7</div>
+    <div class="top-bar-item">&#128222; +1 (647) 871-9231</div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════
+     NAVIGATION
+═══════════════════════════════════ -->
+<div class="nav-wrap">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#" class="logo">
+        <img src="Logo2.png" alt="Eden Carnation - Fresh Flowers Toronto">
+      </a>
+      <ul class="nav-links">
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#locations">Locations</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="https://wa.me/16478719231?text=Hi%20Eden%20Carnation!%20I%27d%20like%20to%20order%20flowers." class="btn btn-wa" target="_blank" rel="noopener">&#128172; Order on WhatsApp</a>
+      </div>
+      <button class="hamburger" onclick="openMenu()" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" id="mobileNav">
+  <div class="mob-head">
+    <span class="logo">
+      <img src="Logo2.png" alt="Eden Carnation">
+    </span>
+    <button class="mob-close" onclick="closeMenu()" aria-label="Close menu">&#10005;</button>
+  </div>
+  <ul class="mob-links">
+    <li><a href="#how-it-works" onclick="closeMenu()">How It Works</a></li>
+    <li><a href="#locations"    onclick="closeMenu()">Locations</a></li>
+    <li><a href="#services"     onclick="closeMenu()">Services</a></li>
+    <li><a href="#gallery"      onclick="closeMenu()">Gallery</a></li>
+    <li><a href="#contact"      onclick="closeMenu()">Contact</a></li>
+  </ul>
+  <a href="https://wa.me/16478719231?text=Hi%20Eden%20Carnation!%20I%27d%20like%20to%20order%20flowers."
+     class="btn btn-wa" style="margin-top:32px" target="_blank" rel="noopener">&#128172; Order on WhatsApp</a>
+</div>
+
+<!-- ═══════════════════════════════════
+     HERO
+═══════════════════════════════════ -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-ring r1"></div>
+  <div class="hero-ring r2"></div>
+  <div class="hero-flower-1"></div>
+  <div class="hero-flower-2"></div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="live-dot"></span>
+        Fresh flowers &middot; Best prices &middot; 7 days a week
+      </div>
+      <h1>Fresh Flowers,<br><em>Unbeatable Prices.</em><br>Anywhere in Toronto.</h1>
+      <p>Toronto&rsquo;s most affordable fresh flower service. Pick up from one of our 4 convenient locations across the city &mdash; or message us on WhatsApp any time for delivery at the cheapest rates in Toronto.</p>
+      <div class="hero-btns">
+        <a href="#locations" class="btn btn-gold">&#128205; Find a Machine</a>
+        <a href="https://wa.me/16478719231?text=Hi%20Eden%20Carnation!%20I%27d%20like%20to%20order%20flowers."
+           class="btn btn-outline-white" target="_blank" rel="noopener">&#128172; Order via WhatsApp</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <span class="stat-num">24/7</span>
+          <span class="stat-lbl">WhatsApp &amp; Delivery</span>
+        </div>
+        <div>
+          <span class="stat-num">4</span>
+          <span class="stat-lbl">Pickup Locations</span>
+        </div>
+        <div>
+          <span class="stat-num">Daily</span>
+          <span class="stat-lbl">Fresh Restocking</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════
+     AVAILABILITY STRIP
+═══════════════════════════════════ -->
+<div class="avail-strip">
+  <div class="container">
+    <div class="avail-inner">
+      <div class="avail-pill"><span class="ic">&#128336;</span> Pickup: <strong>5 AM &ndash; 9 PM daily</strong></div>
+      <div class="avail-pill"><span class="ic">&#128666;</span> Delivery: <strong>24/7 &mdash; Cheapest rates</strong></div>
+      <div class="avail-pill"><span class="ic">&#128176;</span> Prices: <strong>Budget-friendly, always</strong></div>
+      <div class="avail-pill"><span class="ic">&#128172;</span> WhatsApp: <strong>Always open</strong></div>
+      <div class="avail-pill"><span class="ic">&#127826;</span> Flowers: <strong>Fresh daily</strong></div>
+    </div>
+  </div>
+</div>
+
+<!-- Wave divider -->
+<div style="line-height:0;background:var(--cream)">
+  <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="display:block;width:100%">
+    <path d="M0,30 C240,60 480,0 720,30 C960,60 1200,0 1440,30 L1440,60 L0,60 Z" fill="#f2f8f4"/>
+  </svg>
+</div>
+
+<!-- ═══════════════════════════════════
+     HOW IT WORKS
+═══════════════════════════════════ -->
+<section class="how-it-works floral-pattern" id="how-it-works">
+  <div class="container">
+    <div class="center">
+      <span class="sec-label">Simple &amp; Convenient</span>
+      <h2 class="sec-title">Beautiful Flowers, Made Simple &amp; Affordable</h2>
+      <p class="sec-sub">Whether you need a last-minute gift or a planned delivery, Eden Carnation gives you the most convenient and budget-friendly option in Toronto.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-n">1</div>
+        <div class="step-icon">&#128205;</div>
+        <h3>Find Your Nearest Pickup Location</h3>
+        <p>Choose from our 4 conveniently located pickup points across Toronto &mdash; each stocked fresh daily and easy to access throughout the day.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-n">2</div>
+        <div class="step-icon">&#127826;</div>
+        <h3>Your Favourite Blooms, Your Budget</h3>
+        <p>From classic roses to seasonal bouquets &mdash; hand-picked, freshly restocked every morning, and priced so that saying &ldquo;I care&rdquo; never has to cost a fortune.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-n">3</div>
+        <div class="step-icon">&#128172;</div>
+        <h3>Need Delivery? WhatsApp Us</h3>
+        <p>Want flowers delivered to your door? Message us on WhatsApp any time &mdash; 24/7 &mdash; and we&rsquo;ll arrange delivery at the cheapest rates available.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-n">4</div>
+        <div class="step-icon">&#128578;</div>
+        <h3>Enjoy Premium Quality, Affordable Price</h3>
+        <p>We believe everyone deserves beautiful flowers. That&rsquo;s why we keep our prices low without ever compromising on the freshness or quality of our blooms.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Wave divider -->
+<div style="line-height:0;background:#f2f8f4">
+  <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="display:block;width:100%">
+    <path d="M0,20 C360,60 720,0 1080,40 C1260,60 1380,20 1440,30 L1440,60 L0,60 Z" fill="#fdf0f3"/>
+  </svg>
+</div>
+
+<!-- ═══════════════════════════════════
+     LOCATIONS
+═══════════════════════════════════ -->
+<section id="locations" class="rose-section">
+  <div class="container">
+    <span class="sec-label">Where to Find Us</span>
+    <h2 class="sec-title">4 Convenient Pickup Locations Across Toronto</h2>
+    <p class="sec-sub">Walk in, pick your fresh bouquet, and you&rsquo;re done &mdash; no waiting, no fuss, and always at a price that won&rsquo;t break the bank.</p>
+    <div class="loc-grid">
+
+      <div class="loc-card">
+        <div class="loc-ico">&#128144;</div>
+        <h3>North York</h3>
+        <p class="city">&#128205; Near North York General, Toronto, ON</p>
+        <div class="loc-badge">&#128336; Open: 5 AM &ndash; 9 PM</div>
+      </div>
+
+      <div class="loc-card">
+        <div class="loc-ico">&#128144;</div>
+        <h3>Scarborough</h3>
+        <p class="city">&#128205; Near Scarborough Health Network, ON</p>
+        <div class="loc-badge">&#128336; Open: 5 AM &ndash; 9 PM</div>
+      </div>
+
+      <div class="loc-card">
+        <div class="loc-ico">&#128144;</div>
+        <h3>Downtown Toronto &mdash; East</h3>
+        <p class="city">&#128205; Near St. Michael&rsquo;s, Downtown Toronto, ON</p>
+        <div class="loc-badge">&#128336; Open: 5 AM &ndash; 9 PM</div>
+      </div>
+
+      <div class="loc-card">
+        <div class="loc-ico">&#128144;</div>
+        <h3>Downtown Toronto &mdash; West</h3>
+        <p class="city">&#128205; Near St. Joseph&rsquo;s, Toronto, ON</p>
+        <div class="loc-badge">&#128336; Open: 5 AM &ndash; 9 PM</div>
+      </div>
+
+    </div>
+    <p class="loc-note">
+      Can&rsquo;t make it to a pickup point? <a href="https://wa.me/16478719231?text=Hi%20Eden%20Carnation!%20I%27d%20like%20to%20order%20flowers." target="_blank" rel="noopener">Message us on WhatsApp</a> &mdash; we offer the cheapest delivery rates in Toronto, available 24/7.
+    </p>
+  </div>
+</section>
+
+<!-- Wave divider -->
+<div style="line-height:0;background:#fdf0f3">
+  <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="display:block;width:100%">
+    <path d="M0,40 C300,0 600,60 900,20 C1100,0 1300,50 1440,30 L1440,60 L0,60 Z" fill="#111827"/>
+  </svg>
+</div>
+
+<!-- ═══════════════════════════════════
+     SERVICES
+═══════════════════════════════════ -->
+<section class="services-sec" id="services">
+  <div class="container">
+    <span class="sec-label">What We Offer</span>
+    <h2 class="sec-title">Our Services</h2>
+    <p class="sec-sub">Convenient pickup, affordable delivery, and unbeatable prices &mdash; Eden Carnation makes fresh flowers accessible to everyone in Toronto.</p>
+    <div class="srv-grid">
+      <div class="srv-card">
+        <div class="srv-icon">&#129302;</div>
+        <h3>Convenient Self-Serve Pickup</h3>
+        <p>Walk up to any of our 4 Toronto pickup locations, select your bouquet, and pay in seconds. No queuing, no waiting &mdash; fresh flowers on your schedule.</p>
+        <span class="srv-tag">5 AM &ndash; 9 PM Daily</span>
+      </div>
+      <div class="srv-card">
+        <div class="srv-icon">&#128666;</div>
+        <h3>Affordable WhatsApp Delivery</h3>
+        <p>Can&rsquo;t pick up in person? Message us on WhatsApp and get fresh flowers delivered to your door at Toronto&rsquo;s most competitive delivery rates.</p>
+        <span class="srv-tag">24/7 &mdash; Cheapest Rates</span>
+      </div>
+      <div class="srv-card">
+        <div class="srv-icon">&#128176;</div>
+        <h3>Budget-Friendly Pricing</h3>
+        <p>We believe beautiful flowers should be affordable for everyone. Our pricing is transparent, fair, and always the best value you&rsquo;ll find in Toronto.</p>
+        <span class="srv-tag">Best Prices Guaranteed</span>
+      </div>
+      <div class="srv-card">
+        <div class="srv-icon">&#127807;</div>
+        <h3>Daily Fresh Restocking</h3>
+        <p>Every pickup location is restocked with locally sourced, seasonal blooms every single day &mdash; so you always receive the freshest flowers possible.</p>
+        <span class="srv-tag">Locally Sourced</span>
+      </div>
+      <div class="srv-card">
+        <div class="srv-icon">&#127970;</div>
+        <h3>Corporate &amp; Bulk Orders</h3>
+        <p>Planning an event or need regular floral arrangements for your workplace? We handle bulk orders at discounted rates with easy WhatsApp booking.</p>
+        <span class="srv-tag">Bulk Discounts Available</span>
+      </div>
+      <div class="srv-card">
+        <div class="srv-icon">&#127873;</div>
+        <h3>Same-Day Gift Bouquets</h3>
+        <p>Need flowers fast? Our pickup locations are stocked from 5 AM every day &mdash; no pre-order needed. Walk up, pick your bouquet, and go.</p>
+        <span class="srv-tag">No Pre-order Needed</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Wave divider -->
+<div style="line-height:0;background:#111827">
+  <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="display:block;width:100%">
+    <path d="M0,30 C480,60 960,0 1440,40 L1440,60 L0,60 Z" fill="#f2f8f4"/>
+  </svg>
+</div>
+
+<!-- ═══════════════════════════════════
+     WHY EDEN CARNATION
+═══════════════════════════════════ -->
+<section class="why-sec floral-pattern" id="about">
+  <div class="container">
+    <div class="why-grid">
+
+      <div class="why-img-wrap">
+        <img src="why_us.jpg"
+             alt="Fresh flower bouquets Eden Carnation Toronto affordable flowers"
+             class="why-img">
+        <div class="float-badge">
+          <div class="float-num">4</div>
+          <div class="float-lbl">Toronto pickup<br>locations</div>
+        </div>
+      </div>
+
+      <div>
+        <span class="sec-label">Why Choose Us</span>
+        <h2 class="sec-title">Toronto&rsquo;s Most Affordable &amp; Convenient Flower Service</h2>
+        <p style="color:var(--mid);font-size:.94rem;line-height:1.75;margin-bottom:8px;">
+          We built Eden Carnation on a simple belief &mdash; fresh, beautiful flowers should be accessible to everyone, at a price that makes sense. Whether it&rsquo;s a spontaneous gift, a planned delivery, or a bulk order for an event, we make it easy, fast, and genuinely affordable.
+        </p>
+        <ul class="why-list">
+          <li class="why-item">
+            <div class="chk">&#10003;</div>
+            <div>
+              <h4>Toronto&rsquo;s Best Flower Prices</h4>
+              <p>We keep our pricing honest and competitive. No hidden fees, no inflated markups &mdash; just great flowers at fair, budget-friendly prices.</p>
+            </div>
+          </li>
+          <li class="why-item">
+            <div class="chk">&#10003;</div>
+            <div>
+              <h4>4 Convenient Pickup Locations</h4>
+              <p>Strategically located across Toronto &mdash; North York, Scarborough, and two Downtown spots &mdash; so there&rsquo;s always one close to you.</p>
+            </div>
+          </li>
+          <li class="why-item">
+            <div class="chk">&#10003;</div>
+            <div>
+              <h4>Cheapest Delivery Rates in Toronto</h4>
+              <p>Need it delivered? We offer the most affordable flower delivery rates in the city, available 24/7 via a simple WhatsApp message.</p>
+            </div>
+          </li>
+          <li class="why-item">
+            <div class="chk">&#10003;</div>
+            <div>
+              <h4>Always Fresh &mdash; Restocked Daily</h4>
+              <p>Every location is refreshed with locally sourced, seasonal blooms every single day. You never get day-old flowers from Eden Carnation.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════
+     CTA BAND
+═══════════════════════════════════ -->
+<div class="cta-band">
+  <div class="container">
+    <h2>Ready to Order? We&rsquo;ve Got the Best Price.</h2>
+    <p>Message us on WhatsApp for same-day delivery at the cheapest rates, pickup directions, or bulk order quotes. We&rsquo;re always here.</p>
+    <div class="cta-btns">
+      <a href="https://wa.me/16478719231?text=Hi%20Eden%20Carnation!%20I%27d%20like%20to%20order%20flowers."
+         class="btn btn-wa" target="_blank" rel="noopener">&#128172; Chat on WhatsApp</a>
+      <a href="#locations" class="btn btn-outline-white">&#128205; Find a Machine</a>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════
+     GALLERY
+═══════════════════════════════════ -->
+<section id="gallery" class="rose-section">
+  <div class="container">
+    <div class="center">
+      <span class="sec-label">Fresh Every Day</span>
+      <h2 class="sec-title">Our Flowers</h2>
+      <p class="sec-sub">Locally sourced, seasonally curated, and restocked daily at all 4 Toronto pickup locations &mdash; always at the best prices.</p>
+    </div>
+    <div class="gal-grid">
+      <div class="gal-item">
+        <img src="gallery_1.jpg" alt="Valentine's Day roses Toronto Eden Carnation affordable flowers">
+        <div class="gal-overlay"></div>
+        <div class="gal-caption"><span>Valentine's Day</span></div>
+      </div>
+      <div class="gal-item">
+        <img src="gallery_2.jpg" alt="Classic wrapped bouquet Toronto affordable flowers pickup">
+        <div class="gal-overlay"></div>
+        <div class="gal-caption"><span>Classic Bouquet</span></div>
+      </div>
+      <div class="gal-item">
+        <img src="gallery_3.jpg" alt="Romantic flower surprise gift Toronto Eden Carnation">
+        <div class="gal-overlay"></div>
+        <div class="gal-caption"><span>Surprise Her</span></div>
+      </div>
+      <div class="gal-item">
+        <img src="gallery_4.jpg" alt="Special occasion red roses delivery Toronto North York Scarborough">
+        <div class="gal-overlay"></div>
+        <div class="gal-caption"><span>Make It Special</span></div>
+      </div>
+      <div class="gal-item">
+        <img src="gallery_5.jpg" alt="Beautiful pink peonies roses fresh bouquet Toronto Eden Carnation">
+        <div class="gal-overlay"></div>
+        <div class="gal-caption"><span>Fresh Daily</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════
+     MOMENTS
+═══════════════════════════════════ -->
+<section class="moments-sec">
+  <div class="container">
+    <div class="center">
+      <span class="sec-label">Every Occasion</span>
+      <h2 class="sec-title">Made for Every Moment</h2>
+      <p class="sec-sub">From spontaneous surprises to life&rsquo;s most special occasions &mdash; Eden Carnation flowers make every moment unforgettable, without breaking the bank.</p>
+    </div>
+    <div class="moments-grid">
+      <div class="moment-card">
+        <img src="gallery_3.jpg" alt="Surprise flower gift Toronto Eden Carnation affordable bouquet">
+        <div class="moment-overlay">
+          <div class="moment-tag">Surprise &amp; Delight</div>
+          <h3>Spontaneous Moments</h3>
+          <p>Pick up a fresh bouquet in seconds at any of our 4 Toronto locations. No planning needed &mdash; just walk up and make someone&rsquo;s day.</p>
+        </div>
+      </div>
+      <div class="moment-card">
+        <img src="gallery_4.jpg" alt="Special occasion red roses Toronto cheapest flower delivery">
+        <div class="moment-overlay">
+          <div class="moment-tag">Milestone Events</div>
+          <h3>Life&rsquo;s Biggest Moments</h3>
+          <p>Proposals, anniversaries, birthdays &mdash; we deliver the most beautiful bouquets at Toronto&rsquo;s most affordable rates, right to your door, 24/7.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════
+     CONTACT
+═══════════════════════════════════ -->
+<section id="contact">
+  <div class="container">
+    <span class="sec-label">Get in Touch</span>
+    <h2 class="sec-title">Contact Eden Carnation</h2>
+    <div class="contact-grid">
+
+      <div class="c-info">
+        <h3>We&rsquo;d love to hear from you</h3>
+        <p>For the fastest response, reach us directly on WhatsApp. We&rsquo;re available for flower orders, delivery requests, bulk bookings, and partnership enquiries &mdash; any time.</p>
+        <div class="c-item">
+          <div class="c-ic">&#128172;</div>
+          <div>
+            <h4>WhatsApp (Fastest)</h4>
+            <p><a href="https://wa.me/16478719231" target="_blank" rel="noopener">+1 (647) 871-9231</a></p>
+          </div>
+        </div>
+        <div class="c-item">
+          <div class="c-ic">&#128231;</div>
+          <div>
+            <h4>Email</h4>
+            <p><a href="mailto:Edencarnation@gmail.com">Edencarnation@gmail.com</a></p>
+          </div>
+        </div>
+        <div class="c-item">
+          <div class="c-ic">&#128205;</div>
+          <div>
+            <h4>Service Area</h4>
+            <p>Toronto, Ontario, Canada</p>
+          </div>
+        </div>
+        <div class="c-item">
+          <div class="c-ic">&#128336;</div>
+          <div>
+            <h4>Machine Hours</h4>
+            <p>5:00 AM &ndash; 9:00 PM &mdash; 7 days a week<br>
+            <small style="color:var(--mid)">WhatsApp &amp; delivery: 24/7 based on availability</small></p>
+          </div>
+        </div>
+        <a href="https://wa.me/16478719231?text=Hi%20Eden%20Carnation!%20I%27d%20like%20to%20order%20flowers."
+           class="btn btn-wa" target="_blank" rel="noopener" style="margin-top:10px">
+          &#128172; Message Us on WhatsApp
+        </a>
+      </div>
+
+      <div class="c-form">
+        <h3>Send a Message</h3>
+        <p class="f-sub">For orders, WhatsApp is fastest. Use this form for general enquiries &mdash; submitting will open a WhatsApp chat with your message pre-filled.</p>
+        <div class="row2">
+          <div class="fg"><label>First Name</label><input type="text" id="fname" placeholder="Jane"></div>
+          <div class="fg"><label>Last Name</label><input type="text" id="lname" placeholder="Smith"></div>
+        </div>
+        <div class="fg"><label>Email</label><input type="email" id="femail" placeholder="jane@email.com"></div>
+        <div class="fg">
+          <label>How can we help?</label>
+          <select id="ftype">
+            <option>Flower Order / Delivery</option>
+            <option>Bulk / Corporate Order</option>
+            <option>Venue / Partnership Enquiry</option>
+            <option>General Question</option>
+          </select>
+        </div>
+        <div class="fg"><label>Message</label><textarea id="fmsg" placeholder="Tell us what you need..."></textarea></div>
+        <button class="btn btn-green" style="width:100%;justify-content:center" onclick="submitForm()">
+          Send Message &#8594;
+        </button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════
+     FOOTER
+═══════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo">
+          <img src="Logo2.png" alt="Eden Carnation">
+        </div>
+        <p class="foot-desc">
+          Toronto&rsquo;s most affordable fresh flower service. Convenient pickup across 4 locations in North York, Scarborough, and Downtown Toronto &mdash; open 5 AM to 9 PM daily. Budget-friendly delivery available 24/7 via WhatsApp at the cheapest rates in the city.
+        </p>
+        <div class="socials">
+          <a href="https://www.instagram.com/edencarnation" class="soc-btn" target="_blank" rel="noopener" aria-label="Instagram">&#128247;</a>
+          <a href="https://wa.me/16478719231" class="soc-btn" target="_blank" rel="noopener" aria-label="WhatsApp">&#128172;</a>
+          <a href="mailto:Edencarnation@gmail.com" class="soc-btn" aria-label="Email">&#9993;</a>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="foot-links">
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#locations">Pickup Locations</a></li>
+          <li><a href="#services">Our Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Pickup Locations</h4>
+        <ul class="foot-links">
+          <li><a href="#locations">North York Pickup</a></li>
+          <li><a href="#locations">Scarborough Pickup</a></li>
+          <li><a href="#locations">Downtown Toronto &mdash; East</a></li>
+          <li><a href="#locations">Downtown Toronto &mdash; West</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Order Now</h4>
+        <p style="font-size:.84rem;margin-bottom:16px">Fastest way to order &mdash; message us directly on WhatsApp any time.</p>
+        <a href="https://wa.me/16478719231?text=Hi%20Eden%20Carnation!%20I%27d%20like%20to%20order%20flowers."
+           class="btn btn-wa" target="_blank" rel="noopener" style="font-size:.84rem;padding:11px 20px">
+          &#128172; WhatsApp Us
+        </a>
+        <p style="font-size:.78rem;margin-top:14px;opacity:.55">
+          +1 (647) 871-9231<br>Edencarnation@gmail.com
+        </p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>&copy; 2025 Eden Carnation. All rights reserved. | Toronto, Ontario, Canada</p>
+      <p>Affordable flowers Toronto &bull; Flower pickup North York &bull; Flower pickup Scarborough &bull; Cheapest flower delivery Toronto &bull; Fresh flowers 24/7</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════════════
+     WHATSAPP FLOATING BUTTON
+═══════════════════════════════════ -->
+<a class="wa-float"
+   href="https://wa.me/16478719231?text=Hi%20Eden%20Carnation!%20I%27d%20like%20to%20order%20flowers."
+   target="_blank" rel="noopener noreferrer" aria-label="Order flowers on WhatsApp">
+  <span class="wa-tooltip">Order flowers &#128144;</span>
+  <div class="wa-circle">
+    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M16 0C7.163 0 0 7.163 0 16c0 2.833.738 5.49 2.027 7.8L0 32l8.427-2.01A15.934 15.934 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm8.258 22.265c-.346.972-2.018 1.858-2.77 1.974-.708.108-1.605.153-2.588-.163-.597-.19-1.363-.443-2.344-.868-4.126-1.78-6.818-5.94-7.025-6.215-.205-.274-1.672-2.223-1.672-4.238 0-2.016 1.057-3.007 1.432-3.417.374-.41.817-.513 1.09-.513.273 0 .546.003.785.014.252.012.59-.096.923.705.346.822 1.176 2.837 1.278 3.043.103.205.171.444.034.717-.137.274-.205.444-.41.683-.205.24-.431.536-.615.72-.205.205-.418.428-.18.838.24.41 1.066 1.756 2.288 2.843 1.572 1.4 2.898 1.832 3.308 2.037.41.205.649.171.889-.103.24-.274 1.03-1.2 1.304-1.61.273-.41.547-.342.923-.205.376.137 2.39 1.127 2.8 1.332.41.205.683.308.786.479.103.17.103.99-.243 1.962z"/>
+    </svg>
+  </div>
+</a>
+
+<!-- ═══════════════════════════════════
+     JAVASCRIPT
+═══════════════════════════════════ -->
+<script>
+  // Mobile menu
+  function openMenu()  { document.getElementById('mobileNav').classList.add('open');  document.body.style.overflow='hidden'; }
+  function closeMenu() { document.getElementById('mobileNav').classList.remove('open'); document.body.style.overflow=''; }
+
+  // Active nav link on scroll
+  const allSections = document.querySelectorAll('section[id]');
+  const navAs = document.querySelectorAll('.nav-links a');
+  window.addEventListener('scroll', () => {
+    let cur = '';
+    allSections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) cur = s.id; });
+    navAs.forEach(a => {
+      const active = a.getAttribute('href') === '#' + cur;
+      a.style.color      = active ? 'var(--green-dark)' : '';
+      a.style.fontWeight = active ? '700' : '';
+    });
+  });
+
+  // Contact form -> WhatsApp
+  function submitForm() {
+    const name = (document.getElementById('fname').value || 'there').trim();
+    const type = document.getElementById('ftype').value;
+    const msg  = document.getElementById('fmsg').value.trim() || 'I have a general enquiry.';
+    const text = 'Hi Eden Carnation! My name is ' + name + '. Re: ' + type + '. ' + msg;
+    window.open('https://wa.me/16478719231?text=' + encodeURIComponent(text), '_blank');
+  }
+</script>
+
+</body>
+</html>
