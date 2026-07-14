@@ -44,7 +44,7 @@
       "@type": "Florist ",
       "name": "Eden Carnation - North York General Hospital",
       "url": "https://edencarnation.com",
-      "telephone": "4373659891",
+      "telephone": "+14373659891",
       "email": "Edencarnation@gmail.com",
       "image": "https://edencarnation.com/Logo2.png",
       "address": {
@@ -1044,7 +1044,7 @@
     <div class="top-bar-item">&#128176; Budget-friendly prices &mdash; Toronto&rsquo;s best rates</div>
     <div class="top-bar-item">&#128205; 4 convenient pickup locations</div>
     <div class="top-bar-item">&#128172; Delivery available 24/7</div>
-    <div class="top-bar-item">&#128222; +1 (647) 871-9231</div>
+    <div class="top-bar-item">&#128222; +1 (437) 365-9891</div>
   </div>
 </div>
 
@@ -1470,7 +1470,7 @@
           <div class="c-ic">&#128172;</div>
           <div>
             <h4>WhatsApp (Fastest)</h4>
-            <p><a href="https://wa.me/14373659891" target="_blank" rel="noopener">+1 (647) 871-9231</a></p>
+            <p><a href="https://wa.me/14373659891" target="_blank" rel="noopener">+1 (437) 365-9891</a></p>
           </div>
         </div>
         <div class="c-item">
@@ -1574,7 +1574,7 @@
           &#128172; WhatsApp Us
         </a>
         <p style="font-size:.78rem;margin-top:14px;opacity:.55">
-          +1 (647) 871-9231<br>Edencarnation@gmail.com
+          +1 (437) 365-9891<br>Edencarnation@gmail.com
         </p>
       </div>
     </div>
@@ -1707,7 +1707,7 @@
       botStep = 2;
     } else if (step === 3) { showBotInput('e.g. 123 Main St, Toronto'); botStep = 3; }
     else if (step === 4)   { showBotInput('Your full name'); botStep = 4; }
-    else if (step === 5)   { showBotInput('e.g. 647-xxx-xxxx'); botStep = 5; }
+    else if (step === 5)   { showBotInput('e.g. 437-xxx-xxxx'); botStep = 5; }
     else if (step === 6)   { showBotInput('e.g. June 1, 2026'); botStep = 6; }
   }
 
@@ -1803,7 +1803,7 @@
       botSay('Please enter your full name:', 500, function() { showBotInput('Your full name'); botStep = 4; });
     } else if (botStep === 4) {
       orderData.name = val;
-      botSay('Please provide a contact number where we can reach you:', 500, function() { showBotInput('e.g. 647-xxx-xxxx'); botStep = 5; });
+      botSay('Please provide a contact number where we can reach you:', 500, function() { showBotInput('e.g. 437-xxx-xxxx'); botStep = 5; });
     } else if (botStep === 5) {
       orderData.phone = val;
       botSay('What is your preferred date for ' + (orderData.type === 'Pickup' ? 'pickup' : 'delivery') + '?', 500, function() { showBotInput('e.g. June 1, 2026'); botStep = 6; });
